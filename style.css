@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rajdhani", sans-serif;
+}
+
+body {
+    background-color: rgb(139, 231, 231);
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10% 0 2% 0;
+    height: 500px;
+    width: 100%;
+    /* position: relative; */
+}
+
+.set {
+    display: flex;
+}
+
+
+.white {
+    background-color: aliceblue;
+    height: 230px;
+    width: 50px; 
+    border: 1px solid #d7c8c8;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
+    /* display: inline-block; */
+}
+
+.black {
+    background-color: black;
+    height: 120px;
+    width: 30px; 
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /* position: absolute; */
+}
+
+.first {
+    position: relative;
+}
+
+.first .a {
+    position: absolute;
+    left: 2.2rem;
+}
+
+.first .b {
+    position: absolute;
+    left: 5.3rem;
+}
+
+
+.second {
+    position: relative;
+}
+
+.second .a {
+    position: absolute;
+    left: 2.2rem;
+}
+
+.second .b {
+    position: absolute;
+    left: 5.3rem;
+}
+
+.second .c {
+    position: absolute;
+    left: 8.5rem;
+}
+
+.third {
+    position: relative;
+}
+
+.third .a {
+    position: absolute;
+    left: 2.2rem;
+}
+
+.third .b {
+    position: absolute;
+    left: 5.3rem;
+}
+
+.fourth {
+    position: relative;
+}
+
+.fourth .a {
+    position: absolute;
+    left: 2.2rem;
+}
+
+.fourth .b {
+    position: absolute;
+    left: 5.3rem;
+}
+
+.fourth .c {
+    position: absolute;
+    left: 8.5rem;
+}
+
+/* 
+.fifth {
+    position: relative;
+}
+
+.fifth .a {
+    position: absolute;
+    left: 2.2rem;
+}
+
+.fifth .b {
+    position: absolute;
+    left: 5.3rem;
+}
+
+.sixth {
+    position: relative;
+}
+
+.sixth .a {
+    position: absolute;
+    left: 2.2rem;
+}
+
+.sixth .b {
+    position: absolute;
+    left: 5.3rem;
+}
+
+.sixth .c {
+    position: absolute;
+    left: 8.5rem;
+} */
