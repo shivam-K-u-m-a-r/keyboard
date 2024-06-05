@@ -74,6 +74,17 @@ body {
 }
 
 
+.active-white {
+    background-color: #cfd6da; /* Change to desired active color for white keys */
+}
+
+.active-black {
+    background-color: #555; /* Change to desired active color for black keys */
+}
+
+
+
+
 
 
 

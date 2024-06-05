@@ -1,18 +1,18 @@
-var numberOfKeys = document.querySelectorAll(".keys").length;
-
-for (i = 0; i<numberOfKeys; i++) {
-    document.querySelectorAll(".keys")[i].addEventListener("click", function() {
-        var keyInnerHTMl = this.innerHTML;
-
-        makeSound(keyInnerHTMl);
-    });
-}
-
-document.addEventListener("keypress", function(event) {
-
-    makeSound(event.key);
-
+document.querySelectorAll(".keys").forEach(key => {
+    key.addEventListener("click", () => handleKeyPress(key));
 });
+
+document.addEventListener("keypress", event => {
+    const keyElement = document.querySelector(`.keys[data-key="${event.key}"]`);
+    if (keyElement) {
+        handleKeyPress(keyElement);
+    }
+});
+
+function handleKeyPress(keyElement) {
+    makeSound(keyElement.dataset.key);
+    activateKey(keyElement);
+}
 
 function makeSound(key) {
     const soundMap = {
@@ -47,4 +47,17 @@ function makeSound(key) {
     } else {
         console.log(`No sound mapped for key: ${key}`);
     }
+}
+
+
+function activateKey(keyElement) {
+    if (keyElement.classList.contains('white')) {
+        keyElement.classList.add('active-white');
+    } else {
+        keyElement.classList.add('active-black');
+    }
+
+    setTimeout(() => {
+        keyElement.classList.remove('active-white', 'active-black');
+    }, 200); // Adjust the duration as needed
 }
