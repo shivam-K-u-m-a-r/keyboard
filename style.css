@@ -49,72 +49,36 @@ body {
     /* position: absolute; */
 }
 
-.first {
+.first, .second, .third, .fourth {
     position: relative;
 }
 
-.first .a {
+.first .a, .second .a, .third .a, .fourth .a {
     position: absolute;
     left: 2.2rem;
 }
 
-.first .b {
+.first .b, .second .b, .third .b, .fourth .b {
     position: absolute;
     left: 5.3rem;
 }
 
 
-.second {
-    position: relative;
-}
 
-.second .a {
-    position: absolute;
-    left: 2.2rem;
-}
 
-.second .b {
-    position: absolute;
-    left: 5.3rem;
-}
 
-.second .c {
+
+.second .c, .fourth .c {
     position: absolute;
     left: 8.5rem;
 }
 
-.third {
-    position: relative;
-}
 
-.third .a {
-    position: absolute;
-    left: 2.2rem;
-}
 
-.third .b {
-    position: absolute;
-    left: 5.3rem;
-}
 
-.fourth {
-    position: relative;
-}
 
-.fourth .a {
-    position: absolute;
-    left: 2.2rem;
-}
 
-.fourth .b {
-    position: absolute;
-    left: 5.3rem;
-}
 
-.fourth .c {
-    position: absolute;
-    left: 8.5rem;
-}
 
 /* 
 .fifth {
