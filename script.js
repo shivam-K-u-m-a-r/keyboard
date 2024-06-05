@@ -19,47 +19,47 @@ function makeSound(key) {
 
     switch (key) {
         case "w":
-            var keyOne = new Audio('./Audio/key1.mp3');
+            var keyOne = new Audio('./Audio/key01.mp3');
             keyOne.play();
             break;
         
         case "a":
-            var keyTwo = new Audio('./Audio/key2.mp3');
+            var keyTwo = new Audio('./Audio/key02.mp3');
             keyTwo.play();
             break;
 
         case "s":
-            var keyThree = new Audio('./Audio/key3.mp3');
+            var keyThree = new Audio('./Audio/key03.mp3');
             keyThree.play();
             break;
         
         case "d":
-            var keyFour = new Audio('./Audio/key4.mp3');
+            var keyFour = new Audio('./Audio/key04.mp3');
             keyFour.play();
             break;
 
         case "j":
-            var keyFive = new Audio('./Audio/key5.mp3');
+            var keyFive = new Audio('./Audio/key05.mp3');
             keyFive.play();
             break;
 
         case "k":
-            var keySix = new Audio('./Audio/key6.mp3');
+            var keySix = new Audio('./Audio/key06.mp3');
             keySix.play();
             break;
 
         case "l":
-            var keySeven = new Audio('./Audio/key7.mp3');
+            var keySeven = new Audio('./Audio/key07.mp3');
             keySeven.play();
             break;
 
         case "q":
-            var keyEight = new Audio('./Audio/key8.mp3');
+            var keyEight = new Audio('./Audio/key08.mp3');
             keyEight.play();
             break;
 
         case "e":
-            var keyNine = new Audio('./Audio/key9.mp3');
+            var keyNine = new Audio('./Audio/key09.mp3');
             keyNine.play();
             break;
 
@@ -70,7 +70,7 @@ function makeSound(key) {
 
         case "t":
             var keyEleven = new Audio('./Audio/key11.mp3');
-            tom4.play();
+            keyEleven.play();
             break;
 
 
