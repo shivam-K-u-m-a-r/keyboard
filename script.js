@@ -1,3 +1,7 @@
+
+let volume = 0.5;
+let pitch = 1.0;
+
 document.querySelectorAll(".keys").forEach(key => {
     key.addEventListener("click", () => handleKeyPress(key));
 });
@@ -7,6 +11,16 @@ document.addEventListener("keypress", event => {
     if (keyElement) {
         handleKeyPress(keyElement);
     }
+});
+
+document.getElementById("volumeSlider").addEventListener("input", event => {
+    volume = parseFloat(event.target.value);
+    document.getElementById("volumeValue").textContent = Math.round(volume * 100) + "%";
+});
+
+document.getElementById("pitchSlider").addEventListener("input", event => {
+    pitch = parseFloat(event.target.value);
+  document.getElementById("pitchValue").textContent = pitch.toFixed(1) + "x";
 });
 
 function handleKeyPress(keyElement) {
@@ -42,6 +56,8 @@ function makeSound(key) {
     };
 
     const audio = new Audio(soundMap[key]);
+    audio.volume = volume;
+    audio.playbackRate = pitch;
     if (audio) {
         audio.play();
     } else {

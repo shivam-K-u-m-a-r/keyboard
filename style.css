@@ -3,23 +3,50 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Rajdhani", sans-serif;
+    font-weight: 600;
 }
 
 body {
-    background-color: rgb(139, 231, 231);
+    background: linear-gradient(to bottom, #aaf6f6, #d8e9f8); /* Soft gradient background */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align controls to the left and keyboard to the right */
+    background: linear-gradient(to bottom, #b5e7d7, #889fb4); /* Light gray background */
+    height: 80%; /* Adjust as needed */
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+#controls {
+    padding: 1rem;
+    width: 13rem; /* Adjust as needed */
+    background-color: #d6fbf7; /* Light turquoise */
+    border-radius: 1rem;
+    border: 1px solid #d3f0f3;
+    box-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
+    height: 230px;
+}
+
+#pitchControl .slider-value {
+    height: 1rem;
+    width: 1rem;
 }
 
 #container {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
-    margin-top: 100px;
-    height: 500px;
-    width: 80%;
-    background-color: #d7c8c8;
+    margin-right: 1rem;
+    width: 70%; /* Adjust as needed */
+    background-color: #f5f5f5; /* Light gray background */
     border-radius: 1rem;
-    /* position: relative; */
 }
 
 .set {
@@ -31,7 +58,7 @@ body {
     background-color: aliceblue;
     height: 230px;
     width: 50px; 
-    border: 1px solid #d7c8c8;
+    border: 1px solid #f0e7e0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     box-shadow: 0 8px 5px rgba(0, 0, 0, 0.5);
@@ -63,11 +90,6 @@ body {
     left: 5.3rem;
 }
 
-
-
-
-
-
 .second .c, .fourth .c {
     position: absolute;
     left: 8.5rem;
@@ -86,41 +108,61 @@ body {
 
 
 
+                                /* Sliders styling */
 
 
 
+ /* Slider track */
 
-
-/* 
-.fifth {
-    position: relative;
+#volumeControl, #pitchControl {
+    padding: 1rem;
 }
 
-.fifth .a {
-    position: absolute;
-    left: 2.2rem;
-}
-
-.fifth .b {
-    position: absolute;
-    left: 5.3rem;
-}
-
-.sixth {
-    position: relative;
-}
-
-.sixth .a {
-    position: absolute;
-    left: 2.2rem;
-}
-
-.sixth .b {
-    position: absolute;
-    left: 5.3rem;
-}
-
-.sixth .c {
-    position: absolute;
-    left: 8.5rem;
-} */
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #8ee8d9;
+    outline: none;
+    margin: 10px 0;
+  }
+  
+  /* Slider thumb */
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #4ca8af;
+    cursor: pointer;
+    transition: background 0.15s ease-in-out;
+  }
+  
+  /* Slider thumb hover effect */
+  input[type="range"]::-webkit-slider-thumb:hover {
+    background: #45a049;
+  }
+  
+  /* Slider thumb focus effect */
+  input[type="range"]:focus::-webkit-slider-thumb {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Slider thumb active effect */
+  input[type="range"]::-webkit-slider-thumb:active {
+    background: #387e3c;
+  }
+  
+  /* Slider thumb when dragged */
+  input[type="range"]:active::-webkit-slider-thumb {
+    background: #387e3c;
+  }
+  
+  /* Slider value */
+  .slider-value {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+                                 
